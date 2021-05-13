@@ -1,0 +1,91 @@
+.Sidebar {
+    padding: .25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -12.4rem;
+}
+#sidebar-logo {
+    align-self: flex-start;
+    height: 56px;
+    margin: 0 auto;
+}
+.Sidebar img {
+    width: 56px;
+    align-self: flex-start;
+}
+.sidebar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1.25rem;
+    margin: .25rem 0;
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.sidebar-link:hover {
+    background-color: rgba(29, 161, 242, .15);
+}
+.sidebar-link i {
+    margin-right: 1rem;
+}
+.sidebar-link a, .sidebar-link .fake-Link {
+    display: flex;
+}
+.Sidebar p {
+    color: inherit;
+    font-weight: 700;
+}
+.sidebar-tweet-btn {
+    width: 100%;
+    margin: .25rem 0;
+    display: flex;
+    justify-content: center;
+}
+.Sidebar #tweet-btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.Sidebar #tweet-btn:hover {
+    background-color: rgb(31, 151, 226);
+}
+.Sidebar #tweet-btn p {
+    width: fit-content;
+}
+.Sidebar i {
+    margin-left: .75rem;
+}
+@media screen and (max-width: 925px) {
+    .Sidebar {
+        left: -5.3rem;
+    }
+    #sidebar-logo {
+        margin: 0;
+        padding-left: .5rem;
+    }
+    .sidebar-tweet-btn {
+        width: 45px;
+        height: 45px;
+    }
+    .Sidebar #tweet-btn {
+        width: 100%;
+    }
+    .Sidebar p {
+        display: none;
+    }
+    .Sidebar i {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 745px) {
+    .Sidebar {
+        display: none;
+    }
+}

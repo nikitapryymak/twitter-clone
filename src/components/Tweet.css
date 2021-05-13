@@ -1,0 +1,129 @@
+.Tweet {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(56, 68, 77);
+    cursor: pointer;
+    position: relative;
+}
+.Tweet:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+.Tweet p {
+    font-weight: 400;
+}
+.Tweet img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin-right: .75rem;
+}
+.single-tweet-content {
+    display: flex;
+    flex-direction: column;
+}
+.single-tweet-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: .65rem;
+}
+.tweet-author, #username {
+    margin-right: .25rem;
+    cursor: pointer;
+}
+.tweet-author:hover {
+    text-decoration: underline;
+}
+#username, #date, .tweet-icons, .tweet-icons > * {
+    color: rgb(136, 153, 166);
+    cursor: pointer;
+}
+.Tweet .tweet-author {
+    font-weight: 700;
+}
+.secondary-info {
+    display: flex;
+    align-items: center;
+}
+.single-tweet-text {
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+.tweet-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.tweet-icons span {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: .9rem;
+    margin-left: .75rem;
+}
+.tweet-icons i {
+    width: 18px;
+    height: 18px;
+    color: inherit;
+    pointer-events: none;
+}
+.comments:hover { color: rgb(29, 161, 242); }
+.comments.commented { color: rgb(29, 161, 242); }
+.retweets:hover { color: rgb(48, 187, 48); }
+.retweets.retweeted { color: rgb(48, 187, 48); }
+.likes:hover { color: rgb(189, 39, 39); }
+.likes.liked { color: rgb(189, 39, 39); }
+.edit-tweet {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    padding: .42rem;
+    color: rgb(136, 153, 166);
+}
+.edit-tweet:hover {
+    background-color: rgba(29, 161, 242, .15);
+    color: rgb(29, 161, 242);
+    border-radius: 100%;
+    display: flex;
+}
+.fa-ellipsis-h {
+    font-size: 1.1rem;
+}
+.edit-tweet-form {
+    position: absolute;
+    top: 1.25rem;
+    right: 3rem;
+    color: #f3f3f3;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 4px rgba(255,255,255,0.18);
+    background: rgb(21, 32, 43);
+}
+.edit-tweet-form button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(21, 32, 43);
+    color: #f3f3f3;
+    border-radius: 6px;
+}
+.edit-tweet-form button:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+.edit-tweet-form i {
+    font-size: 1.1rem;
+    color: rgb(136, 153, 166);
+    margin-right: .75rem;
+    padding-bottom: 0.1rem;
+}
+@media screen and (max-width: 454px) {
+    .single-tweet-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tweet-author {
+        margin-bottom: .25rem;
+    }
+}

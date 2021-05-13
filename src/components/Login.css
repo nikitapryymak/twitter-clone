@@ -1,0 +1,74 @@
+.Login {
+    height: 80vh;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.twitter-logo {
+    width: 60px;
+    margin-right: .5rem;
+}
+.google-login {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .6rem;
+    font-size: 1.4rem;
+    background-color: #f3f3f3;
+    color: #676565;
+    margin: 1.5rem 0;
+}
+.google-login img {
+    width: 35px;
+    margin-right: 1.5rem;
+}
+.Login a {
+    text-decoration: underline;
+}
+.error {
+    color: #d43e3e;
+    font-weight: 400;
+}
+/* .Login p {
+    margin-bottom: 1rem;
+}
+.Login h2 {
+    margin-bottom: 1.8rem;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login-form input {
+    margin-bottom: 2rem;
+    padding: .3rem;
+    font-size: 1rem;
+    color: #f3f3f3;
+    letter-spacing: .5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(56, 68, 77);
+}
+input#username {
+    position: relative;
+}
+.login-form button {
+    padding: 1rem;
+    background-color: #1ea1f2;
+    color: #f3f3f3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.login-form button:hover {
+    background-color: #188ed8;
+} */

@@ -1,0 +1,22 @@
+.MobileFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 3.25rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    background-color: rgb(21, 32, 43);
+    border-top: 1px solid rgb(56, 68, 77);
+    z-index: 10;
+}
+.MobileFooter a {
+    color: rgb(136, 153, 166);
+    font-size: 1.45rem;
+}
+@media screen and (max-width: 745px) {
+    .MobileFooter {
+        display: flex;
+    }
+}

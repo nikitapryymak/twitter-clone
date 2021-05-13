@@ -1,0 +1,56 @@
+/* .Home {
+
+} */
+.Feed {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    border-left: 1px solid rgb(56, 68, 77);
+    border-right: 1px solid rgb(56, 68, 77);
+    /* overflow-y: scroll; */
+    scrollbar-width: none; /* Firefox browser */
+}
+.Feed::-webkit-scrollbar {  /* Chrome, Safari, Opera */
+    display: none;
+}
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 598px;
+    background: rgb(21, 32, 43);
+    color: #f3f3f3;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border-bottom: 1px solid rgb(56, 68, 77);
+    cursor: pointer;
+    z-index: 1;
+}
+.separator {
+    height: .75rem;
+    background-color: rgb(25 39 52);
+    border-bottom: 1px solid rgb(56, 68, 77);
+}
+.MobileTweetIcon #tweet-btn {
+    display: none;
+    position: fixed;
+    bottom: 4.25rem;
+    right: 1.1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 64px;
+    height: 64px;
+}
+@media screen and (max-width: 745px) {
+    .MobileTweetIcon #tweet-btn {
+        display: initial;
+    }
+    .Feed {
+        padding-bottom: 3.25rem;
+    }
+}

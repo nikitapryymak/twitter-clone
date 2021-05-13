@@ -1,0 +1,14 @@
+.ComposeTweet {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid rgb(56, 68, 77);
+    border-radius: 6px;
+    margin-top: 3rem;
+}
+.tweetbox-wrapper {
+padding: 1rem;
+}
+.tweetbox-wrapper .home-arrow {
+    margin: 0;
+}
